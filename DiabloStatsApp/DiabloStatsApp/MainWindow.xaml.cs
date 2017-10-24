@@ -37,7 +37,7 @@ namespace DiabloStatsApp
             this.lv_Profile.View = gridViewProfile;
             gridViewProfile.Columns.Add(new GridViewColumn { Header = "Id", DisplayMemberBinding = new Binding("id") });
             gridViewProfile.Columns.Add(new GridViewColumn { Header = "Name", DisplayMemberBinding = new Binding("name") });
-            gridViewProfile.Columns.Add(new GridViewColumn { Header = "Class", DisplayMemberBinding = new Binding("@class") });
+            gridViewProfile.Columns.Add(new GridViewColumn { Header = "Class", DisplayMemberBinding = new Binding("class") });
 
             var gridViewHero = new GridView();
             this.lv_Hero.View = gridViewHero;
