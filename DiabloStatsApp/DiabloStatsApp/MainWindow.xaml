@@ -1,0 +1,37 @@
+﻿<Window x:Class="DiabloStatsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiabloStatsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="698.228">
+    <Grid>
+        <TextBox x:Name="tb_BattleTag" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="BattleTag" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_Profile" Content="Career Profile:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Button x:Name="btn_Profile" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="135,36,0,0" Height="23" Click="btn_Profile_Click"/>
+        <Label x:Name="lbl_Hero" Content="Hero:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0"/>
+        <TextBox x:Name="tb_BattleTagHero" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="BattleTag" VerticalAlignment="Top" Width="120" Margin="200,36,0,0"/>
+        <Button x:Name="btn_Hero" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="325,36,0,0" Height="51" Click="btn_Hero_Click"/>
+        <TextBox x:Name="tb_HeroId" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Hero ID" VerticalAlignment="Top" Width="120" Margin="200,64,0,0"/>
+        <ListBox x:Name="lb_Profile" HorizontalAlignment="Left" Height="219" Margin="10,92,0,0" VerticalAlignment="Top" Width="266">
+            <ListView x:Name="lv_Profile" Height="209" Width="256">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ListBox>
+        <ListBox x:Name="lb_Hero" HorizontalAlignment="Left" Height="219" VerticalAlignment="Top" Width="402" Margin="281,92,0,0">
+            <ListView x:Name="lv_Hero" Height="209" Width="392">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ListBox>
+
+    </Grid>
+</Window>
